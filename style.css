@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #f7f1e8;
+    color: #2b2118;
+    line-height: 1.7;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 290px;
+    background: #2b2118;
+    color: #fff7ed;
+    padding: 40px 25px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar h1 {
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    color: #facc15;
+}
+
+.sidebar p {
+    font-size: 15px;
+    margin-bottom: 28px;
+    color: #fed7aa;
+}
+
+nav a {
+    display: block;
+    color: #fff7ed;
+    text-decoration: none;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+.content {
+    margin-left: 290px;
+    width: calc(100% - 290px);
+    padding: 45px;
+}
+
+.hero {
+    background: #fffaf0;
+    border-left: 8px solid #d97706;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 24px rgba(43,33,24,0.12);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #92400e;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin: 30px 0 18px;
+    color: #2b2118;
+    border-bottom: 3px solid #d97706;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    border-top: 5px solid #d97706;
+    box-shadow: 0 6px 18px rgba(43,33,24,0.10);
+}
+
+.card h3 {
+    color: #92400e;
+    margin-bottom: 10px;
+}
+
+.article {
+    background: white;
+    padding: 28px;
+    margin-bottom: 22px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(43,33,24,0.10);
+}
+
+.article h3 {
+    color: #92400e;
+    margin-bottom: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background: #fde68a;
+    color: #78350f;
+    padding: 7px 12px;
+    border-radius: 4px;
+    margin: 6px 6px 0 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #2b2118;
+    color: #fff7ed;
+    text-align: center;
+    border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        display: block;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 25px;
+    }
+}
